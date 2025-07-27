@@ -146,6 +146,7 @@ const DeviceRow = ({ data, index, style }) => {
                   )}
                 </IconButton>
               </Tooltip>
+
             )}
           </>
         )}

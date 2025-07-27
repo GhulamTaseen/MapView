@@ -29,7 +29,7 @@ const EventsDrawer = ({ open, onClose }) => {
   const t = useTranslation();
 
   const devices = useSelector((state) => state.devices.items);
-
+const device = devices.deviceId;
   const events = useSelector((state) => state.events.items);
 
   const formatType = (event) => formatNotificationTitle(t, {
@@ -61,7 +61,7 @@ const EventsDrawer = ({ open, onClose }) => {
             disabled={!event.id}
           >
             <ListItemText
-              primary={`${devices[event.deviceId]?.name} • ${formatType(event)}`}
+              primary={`${device} • ${formatType(event)}`}
               secondary={formatTime(event.eventTime, 'seconds')}
             />
             <IconButton

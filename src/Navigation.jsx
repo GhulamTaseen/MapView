@@ -60,6 +60,8 @@ import EmulatorPage from './other/EmulatorPage';
 import Loader from './common/components/Loader';
 import { generateLoginToken } from './common/components/NativeInterface';
 import { useLocalization } from './common/components/LocalizationProvider';
+import XmlFileDisplay from './settings/components/XmlFileDisplay';
+import StoragePage from './settings/StoragePage';
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -129,6 +131,8 @@ const Navigation = () => {
           <Route path="calendars" element={<CalendarsPage />} />
           <Route path="calendar/:id" element={<CalendarPage />} />
           <Route path="calendar" element={<CalendarPage />} />
+           <Route path="xmlfile" element={<XmlFileDisplay />} />
+           <Route path="storage" element={<StoragePage />} />
           <Route path="commands" element={<CommandsPage />} />
           <Route path="command/:id" element={<CommandPage />} />
           <Route path="command" element={<CommandPage />} />

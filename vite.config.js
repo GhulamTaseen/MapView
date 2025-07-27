@@ -6,12 +6,12 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig(() => ({
   server: {
-    port: 3000,
+    port: 3001,
     proxy: {
-      // '/api/socket': 'ws://localhost:8082',
-      // '/api': 'http://localhost:8082',
-      '/api/socket': 'wss:demo.traccar.org',
-      '/api': 'https://demo.traccar.org',
+      '/api/socket': 'ws://localhost:8082',
+      '/api': 'http://localhost:8082',
+      //  '/api/socket': 'wss:demo.traccar.org',
+      // '/api': 'https://demo.traccar.org',
     },
   },
   build: {

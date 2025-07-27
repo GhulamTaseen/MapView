@@ -344,6 +344,7 @@
     "serverColorPrimary": "Color Primary",
     "serverColorSecondary": "Color Secondary",
     "serverLogo": "Logo Image",
+    "serverStorage": "Storage",
     "serverLogoInverted": "Inverted Logo Image",
     "serverChangeDisable": "Disable Server Change",
     "serverDisableShare": "Disable Device Sharing",
